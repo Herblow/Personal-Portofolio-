@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Portofolio Arif</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="header">
+      <button class="toggle-btn" onclick="toggleTheme()">Toggle Mode</button>
+      <img src="profile.jpg" class="profile-img">
+      <h1>Arif Rahman</h1>
+      <p>Linux & Web Enthusiast</p>
+    </header>
+
+    <section class="card">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya tertarik dengan Linux, server, dan web development.
+        Portofolio ini dijalankan langsung dari server Linux di Android.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Skills</h2>
+      <ul class="skills">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Linux (Termux)</li>
+      <li>Basic Backend (Flask)</li>
+     </ul>
+    </section>
+
+    <section class="card">
+      <h2>Skill</h2>
+      <ul class="skill-list">
+        <li>Linux (Termux, Ubuntu) (newbie)</li>
+        <li>Basic Server & Networking (belajar)</li>
+        <li>HTML & CSS (belajar)</li>
+      </ul>
+    </section>
+
+    <section class="card">
+  <h2>Project</h2>
+
+  <div class="grid">
+    <div class="project-card">
+      <h3>Personal Portofolio</h3>
+      <p>Website portofolio yang dijalankan di Linux (Termux) dengan dark/light mode.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>Website statis dengan HTML & CSS, dijalankan di server sendiri.</p>
+    </div>
+  </div>
+</section>
+
+     <section class="card">
+   <h2>How This Site Works?</h2>
+  <ul>
+    <li>Dibuat dengan HTML & CSS sederhana</li>
+    <li>Dijalankan di Linux (Termux) pada Android</li>
+    <li>Menggunakan Python HTTP Server</li>
+    <li>Mendukung Dark & Light Mode</li>
+  </ul>
+</section>
+
+    <section class="card">
+      <h2>Kontak</h2>
+      <p>Email: arif.liverjak@gmail.com</p>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Arif Rahman</p>
+    </footer>
+
+  </div>
+
+  <script>
+  function toggleTheme() {
+    document.body.classList.toggle("light");
+  }
+  </script>
+
+</body>
+</html>

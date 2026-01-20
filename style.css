@@ -1,0 +1,153 @@
+body {
+  font-family: 'Inter', sans-serif;
+}* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #020617, #020617);
+  color: #e5e7eb;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+  color: #38bdf8;
+}
+
+.header p {
+  color: #94a3b8;
+  font-size: 18px;
+}
+
+.card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #38bdf8;
+}
+
+.card p, .card li {
+  line-height: 1.6;
+  color: #cbd5f5;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.skill-list li {
+  margin-bottom: 6px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #64748b;
+  font-size: 14px;
+}
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #38bdf8;
+  margin-bottom: 16px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #38bdf8;
+}
+.toggle-btn {
+  display: block;
+  margin: 20px auto 40px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #38bdf8;
+  color: #020617;
+  cursor: pointer;
+}
+body.light {
+  background: #f8fafc;
+  color: #020617;
+}
+
+body.light .card,
+body.light .project-card {
+  background: #ffffff;
+  border-color: #e2e8f0;
+}
+
+body.light h1,
+body.light h2,
+body.light h3 {
+  color: #0284c7;
+}
+.skills {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: var(--card-bg);
+  margin: 6px 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.footer {
+  text-align: center;
+  opacity: 0.6;
+  margin-top: 40px;
+}
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+section h2 {
+  margin-bottom: 12px;
+  border-bottom: 2px solid rgba(255,255,255,0.1);
+  padding-bottom: 6px;
+}
