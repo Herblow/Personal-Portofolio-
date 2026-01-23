@@ -4,17 +4,25 @@
   <meta charset="UTF-8">
   <title>Portofolio Arif</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <div class="container">
 
     <header class="header">
-      <button class="toggle-btn" onclick="toggleTheme()">Toggle Mode</button>
-      <img src="profile.jpg" class="profile-img">
-      <h1>Arif Rahman</h1>
-      <p>Linux & Web Enthusiast</p>
+      <div class="header-left">
+        <img src="profile.jpg" class="profile-img">
+        <div class="header-text">
+          <h1>Arif Rahman</h1>
+          <p class="subtitle">Linux & Web Enthusiast</p>
+          <p class="tagline">Dijalankan dengan server Linux di Android</p>
+        </div>
+      </div>
+
+      <button class="toggle-btn" onclick="toggleTheme()">
+        <span id="toggleText">Dark Mode</span>
+      </button>
     </header>
 
     <section class="card">
@@ -28,51 +36,63 @@
     <section class="card">
       <h2>Skills</h2>
       <ul class="skills">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Linux (Termux)</li>
-      <li>Basic Backend (Flask)</li>
-     </ul>
-    </section>
-
-    <section class="card">
-      <h2>Skill</h2>
-      <ul class="skill-list">
-        <li>Linux (Termux, Ubuntu) (newbie)</li>
-        <li>Basic Server & Networking (belajar)</li>
-        <li>HTML & CSS (belajar)</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Linux (Termux)</li>
+        <li>Basic Backend (Flask)</li>
       </ul>
     </section>
 
     <section class="card">
-  <h2>Project</h2>
+      <h2>Project</h2>
 
-  <div class="grid">
-    <div class="project-card">
-      <h3>Personal Portofolio</h3>
-      <p>Website portofolio yang dijalankan di Linux (Termux) dengan dark/light mode.</p>
-    </div>
+      <div class="grid">
+        <div class="project-card">
+          <h3>Portofolio Website</h3>
+          <p>Website portofolio ini, dibuat dengan HTML & CSS, mendukung Dark/Light Mode.</p>
+          <div class="project-links">
+            <a href="http://localhost:8000" class="btn" target="_blank">Live Demo</a>
+            <a href="#" class="btn secondary">GitHub</a>
+          </div>
+        </div>
 
-    <div class="project-card">
-      <h3>Portfolio Website</h3>
-      <p>Website statis dengan HTML & CSS, dijalankan di server sendiri.</p>
-    </div>
-  </div>
-</section>
+        <div class="project-card">
+          <h3>Cloud Storage (OneDrive)</h3>
+          <p>Cloud storage pribadi yang dijalankan di Linux Android, dengan fitur upload, preview, download, delete.</p>
+          <div class="project-links">
+            <a href="http://localhost:8000" class="btn" target="_blank">Live Demo</a>
+            <a href="#" class="btn secondary">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-     <section class="card">
-   <h2>How This Site Works?</h2>
-  <ul>
-    <li>Dibuat dengan HTML & CSS sederhana</li>
-    <li>Dijalankan di Linux (Termux) pada Android</li>
-    <li>Menggunakan Python HTTP Server</li>
-    <li>Mendukung Dark & Light Mode</li>
-  </ul>
-</section>
+    <section class="card">
+      <h2>How This Site Works?</h2>
+      <ul class="how">
+        <li>Dibuat dengan HTML & CSS sederhana</li>
+        <li>Dijalankan di Linux (Termux) pada Android</li>
+        <li>Menggunakan Python HTTP Server</li>
+        <li>Mendukung Dark & Light Mode</li>
+      </ul>
+    </section>
 
     <section class="card">
       <h2>Kontak</h2>
-      <p>Email: arif.liverjak@gmail.com</p>
+      <div class="contact">
+        <div class="contact-item">
+          <h3>Email</h3>
+          <p>arif.liverjak@gmail.com</p>
+        </div>
+        <div class="contact-item">
+          <h3>WhatsApp</h3>
+          <p><a href="https://wa.me/628xxxxxx" target="_blank">Chat via WhatsApp</a></p>
+        </div>
+        <div class="contact-item">
+          <h3>Telegram</h3>
+          <p><a href="https://t.me/username" target="_blank">Chat via Telegram</a></p>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
@@ -82,9 +102,11 @@
   </div>
 
   <script>
-  function toggleTheme() {
-    document.body.classList.toggle("light");
-  }
+    function toggleTheme() {
+      document.body.classList.toggle("light");
+      document.getElementById("toggleText").innerText =
+        document.body.classList.contains("light") ? "Light Mode" : "Dark Mode";
+    }
   </script>
 
 </body>
